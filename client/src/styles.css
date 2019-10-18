@@ -26,6 +26,19 @@ footer {
   display: flex;
 }
 
+#credits-num {
+  font-weight: bolder;
+  font-size: 32px;
+  color: white;
+  text-shadow: 0.03em 0 black, 0 0.03em black, -0.03em 0 black, 0 -0.03em black;
+  margin-bottom: 1.2rem;
+  margin-left: 5px;
+}
+
+#credits-icon {
+  font-size: 35px;
+}
+
 .home-heading {
   font-family: Satisfy, cursive;
   font-weight: bolder;

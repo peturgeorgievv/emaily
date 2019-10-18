@@ -29,8 +29,9 @@ class Header extends Component {
       default:
         return (
           <React.Fragment>
-            <li key="3" style={{ margin: '0 10px' }}>
-              Credits: {this.props.auth.credits}
+            <li key="4"><i class="material-icons" id="credits-icon">monetization_on</i></li>
+            <li key="3" id="credits-num">
+              {this.props.auth.credits}
             </li>
             <li key="1"><Payments /></li>
             <li key="2">
