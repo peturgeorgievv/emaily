@@ -1,4 +1,5 @@
 import 'materialize-css/dist/css/materialize.min.css';
+import './styles.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -17,5 +18,4 @@ ReactDOM.render(
   document.querySelector('#root')
 );
 
-console.log('STRIPE KEY IS', process.env.REACT_APP_STRIPE_KEY);
 console.log('Enviorment is', process.env.NODE_ENV);

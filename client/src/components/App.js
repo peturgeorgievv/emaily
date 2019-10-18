@@ -7,6 +7,7 @@ import Header from './Header';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
 import SurveyNew from './surveys/SurveyNew';
+import Footer from './Footer';
 
 class App extends Component {
   componentDidMount() {
@@ -15,14 +16,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <BrowserRouter>
-          <div>
-            <Header />
+          <Header />
+          <main className="container">
             <Route exact path="/" component={Landing} />
             <Route exact path="/surveys" component={Dashboard} />
             <Route path="/surveys/new" component={SurveyNew} />
-          </div>
+          </main>
+          <Footer />
         </BrowserRouter>
       </div>
     );
