@@ -13,9 +13,11 @@ class Payments extends Component {
                 token={token => this.props.handleToken(token)}
                 stripeKey={process.env.REACT_APP_STRIPE_KEY}
             >
-                <button className="btn grey lighten-5 black-text">
-                    Add Credits
-                </button>
+                <div className="button_cont" align="center">
+                    <button className="example_e grey lighten-5 black-text" rel="nofollow noopener">
+                        Add Credits
+                        </button>
+                </div>
             </StripeCheckout>
         );
     }
