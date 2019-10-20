@@ -14,17 +14,17 @@ class Credits extends Component {
     render() {
         return (
             <div className="container">
-                <div class="row">
-                    <div class="col s12 m6">
-                        <div class="card grey darken-2">
-                            <div class="card-content white-text">
-                                <span class="card-title credits-title">How to Add Credits</span>
+                <div className="row">
+                    <div className="col s12 m6">
+                        <div className="card grey darken-2">
+                            <div className="card-content white-text">
+                                <span className="card-title credits-title">How to Add Credits</span>
                                 <p className="credits-text">
                                     We are using Stripe API in Test Mode for billing. To add your credits enter some e-mail (doesn't need to be valid).
                                 Some future date, and 3 digit number. But the most important thing is the Card Number. <br /><br />
                                     It should be: <b>4242 4242 4242 4242</b></p>
                             </div>
-                            <div class="card-action">
+                            <div className="card-action">
                                 <a href="#!">
                                     <StripeCheckout
                                         name="Emaily"
@@ -42,10 +42,10 @@ class Credits extends Component {
                         </div>
                     </div>
 
-                    <div class="col s12 m6">
-                        <div class="card grey darken-2">
-                            <div class="card-content white-text">
-                                <span class="card-title credits-title">First Survey!</span>
+                    <div className="col s12 m6">
+                        <div className="card grey darken-2">
+                            <div className="card-content white-text">
+                                <span className="card-title credits-title">First Survey!</span>
                                 <p className="credits-text">
                                     <br />Making your first Survey is very simple! <br /><br />
                                     Add the "Title" you like and the subject which you consider most appropriate with the survey. After that
@@ -54,7 +54,7 @@ class Credits extends Component {
 
                                 </p>
                             </div>
-                            <div class="card-action">
+                            <div className="card-action">
                                 <a href="#!">
                                     <button className="example_e red darken-3 white-text" onClick={this.onNewSurvey}>
                                         New Survey

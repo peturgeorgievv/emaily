@@ -48,6 +48,13 @@ module.exports = app => {
             .value();
 
         res.send({});
+    });
+
+    app.post('/api/surveys/:surveyId', requireLogin, async (req, res) => {
+        const surveys = await Survey.findOneAndRemove({ _id: req.params.surveyId });
+        // const surveys = await Survey.find({ _user: req.user.id })
+        //     .select({ recipients: false });
+        res.send(surveys);
     })
 
     app.post('/api/surveys', requireLogin, requireCredits, async (req, res) => {

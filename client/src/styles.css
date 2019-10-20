@@ -64,6 +64,14 @@ footer {
   margin-left: 5px;
 }
 
+#no-surveys-text {
+  font-size: 4em;
+  color: white;
+  text-shadow: 0.06em 0 black, 0 0.04em black, -0.04em 0 black, 0 -0.05em black;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
 .example_e {
   border: none;
   color: black;
@@ -79,6 +87,17 @@ footer {
 .answers-text {
   text-decoration: underline;
   font-weight: bolder;
+}
+.delete-btn {
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 }
 
 .example_e:hover {
