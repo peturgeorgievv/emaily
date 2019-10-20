@@ -36,7 +36,7 @@ class Header extends Component {
             <li key="1"><Payments /></li>
             <li key="2">
               <div className="button_cont" align="center">
-                <button onClick={this.logOut} className="example_e grey lighten-5 black-text" rel="nofollow noopener">
+                <button onClick={this.logOut} className="example_e grey lighten-5 black-text" rel="nofollow noopener" style={{ marginRight: '10px' }}>
                   Logout
               </button>
               </div>

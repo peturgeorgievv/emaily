@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col l6 s12">
-                        <p className="text-lighten-4">You can find this application very usefull. A lot of people already did!</p>
+                        <p className="text-lighten-4">&copy; 2019 Emailster </p>
                     </div>
                     <div className="col l4 offset-l2 s12">
                         <ul>

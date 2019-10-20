@@ -29,9 +29,6 @@ const Landing = () => {
                             <p>We are using Stripe in Test mode. <br /> You can use our services for free!
                             Explanation how to use it will be provided when you try to Add Credits!
                             </p>
-                            <div class="tags">
-                                <div class="tag">Don't Worry!</div>
-                            </div>
                         </div>
                     </div>
                 </div>

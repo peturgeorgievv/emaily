@@ -39,6 +39,16 @@ footer {
   font-size: 35px;
 }
 
+.credits-title {
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.credits-text {
+  font-size: 17px;
+}
+
 .home-heading {
   font-family: Satisfy, cursive;
   font-weight: bolder;
@@ -51,6 +61,7 @@ footer {
 .home-heading-logo {
   font-family: Satisfy, cursive;
   font-weight: bolder;
+  margin-left: 5px;
 }
 
 .example_e {
