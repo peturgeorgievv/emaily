@@ -13,7 +13,7 @@ class Credits extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <div class="row">
                     <div class="col s12 m6">
                         <div class="card grey darken-2">
@@ -33,7 +33,7 @@ class Credits extends Component {
                                         token={token => this.props.handleToken(token)}
                                         stripeKey={process.env.REACT_APP_STRIPE_KEY}
                                     >
-                                        <button className="example_e red lighten-2 black-text">
+                                        <button className="example_e red darken-3 white-text">
                                             Add Credits
                                         </button>
                                     </StripeCheckout>
@@ -56,7 +56,7 @@ class Credits extends Component {
                             </div>
                             <div class="card-action">
                                 <a href="#!">
-                                    <button className="example_e red lighten-2 black-text" onClick={this.onNewSurvey}>
+                                    <button className="example_e red darken-3 white-text" onClick={this.onNewSurvey}>
                                         New Survey
                                         </button>
                                 </a>

@@ -10,19 +10,21 @@ class SurveyList extends Component {
     renderSurveys() {
         return this.props.surveys.reverse().map(survey => {
             return (
-                <div className="card blue-grey lighten-5" key={survey._id}>
-                    <div className="card-content">
-                        <span className="card-title">{survey.title}</span>
-                        <p>
-                            {survey.body}
-                        </p>
-                        <p className="right">
-                            Sent On: {new Date(survey.dateSent).toLocaleDateString()}
-                        </p>
-                    </div>
-                    <div className="card-action">
-                        <span href="#!">Yes: <b className="green-text">{survey.yes}</b> </span>
-                        <span> No: <b className="red-text">{survey.no}</b></span>
+                <div className="col s12 m5">
+                    <div className="card blue-grey lighten-5" key={survey._id}>
+                        <div className="card-content">
+                            <span className="card-title"><b>{survey.title}</b></span>
+                            <p>
+                                {survey.body}
+                            </p>
+                            <p className="right">
+                                Sent On: <b>{new Date(survey.dateSent).toLocaleDateString()}</b>
+                            </p>
+                        </div>
+                        <div className="card-action light-green lighten-5">
+                            <span>Yes: <b className="green-text answers-text">{survey.yes}</b> </span>
+                            <span> No: <b className="red-text answers-text">{survey.no}</b></span>
+                        </div>
                     </div>
                 </div>
             )
@@ -32,7 +34,11 @@ class SurveyList extends Component {
     render() {
         return (
             <div className="container">
-                {this.renderSurveys()}
+                <div class="row">
+
+                    {this.renderSurveys()}
+                </div>
+
             </div>
         )
     }
