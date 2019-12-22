@@ -11,7 +11,6 @@ class SurveyList extends Component {
     }
 
     renderSurveys() {
-        console.log(this.props.surveys);
         if (this.props.surveys.length < 1 || this.props.surveys === undefined) {
             return <h1 id="no-surveys-text" align="center">You don't have any Surveys!</h1>
         }
